@@ -1,0 +1,11 @@
+IFID: B3ED0CF7-895A-47F0-B290-D2D2B97D0505
+Name: Creepy Sprinkles
+Byline: by Matt Wassle, Mary Thurman, Nicolas Peckman
+AuthorEmail: Nicolas Peckman <elijahpeckman@gmail.com>
+Desc: Horror game
+Version: 1
+ReleaseDate: 2015-10-29
+Language: en-US
+LicenseType: Freeware
+CopyingRules: Nominal cost only; compilations allowed
+PresentationProfile: Default
