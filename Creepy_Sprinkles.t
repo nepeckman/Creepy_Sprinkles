@@ -11,18 +11,42 @@
  ;
 
  gameMain: GameMainDef
+ {
  	initialPlayerChar = me
- ;
+ 	
+ 	showIntro(){
+ 		"You wake up.\n
+ 		You pry yourself from the frigid ground, body numb from the cold.
+ 		You're adrift in a whispering sea of tall stalks.
+ 		You don't remember how you got here.
+ 		As you stare at the black sky, wondering how you can return to a place of warmth and light, you see you are lying in a pool of blood.
+ 		Frantically you check yourself for wounds and realize that you are lying in someone else's blood.";
+ 	}
+ }
  
- startRoom: OutdoorRoom 'Heart of the Corn'
- 	"You start here"
+ startRoom: OutdoorRoom 'The Heart'
+ 	"The Heart of the Field"
  	south = s1
- ;
- 
- s1: OutdoorRoom 'First Split'
- 	"<IMG SRC='assets/images/2turn.png'>You are presented with <b>two</b> different directions."
- 	north = startRoom
  ;
 
  +me: Actor
  ; 
+ 
+ 
+ s1: OutdoorRoom 'First Split'
+ 	"<IMG SRC='assets/images/2turn.png'>You are presented with <b>two</b> different directions."
+ 	north = startRoom
+ 	east = s2
+ ;
+ 
+ s2: OutdoorRoom 'Second Split'
+ 	"More splitting"
+ 	west = s1
+ 	north = deadend
+ ;
+ 
+ deadend: OutdoorRoom 'Deadend'
+ 	"Turn back!"
+ 	west = startRoom
+ ;
+ 
