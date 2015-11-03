@@ -4,7 +4,7 @@ Byline: by Matt Wassle, Mary Thurman, Nicolas Peckman
 AuthorEmail: Nicolas Peckman <elijahpeckman@gmail.com>
 Desc: Horror game
 Version: 1
-ReleaseDate: 2015-10-29
+ReleaseDate: 2015-11-03
 Language: en-US
 LicenseType: Freeware
 CopyingRules: Nominal cost only; compilations allowed

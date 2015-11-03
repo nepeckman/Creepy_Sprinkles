@@ -59,7 +59,7 @@ f3: OutdoorRoom 'Fork 3'
     "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
      At the next turn you see another, then another. How large is this place?"
     west = f2
-    south = d2
+    south = f10
     north = f4
 ;
 f4: OutdoorRoom 'Fork 4'
@@ -71,7 +71,8 @@ f4: OutdoorRoom 'Fork 4'
 ;
 f5: OutdoorRoom 'Fork 5'
     "<IMG SRC='assets/images/3turn.png' WIDTH=384 HEIGHT=216>\n
-    At the next turn you see another, then another. How large is this place?"
+    You see something scrawled in blood on the cold earth. \"Help! I think there's something in here with me. I've lost track of time, been in here so long. 
+Even now, I can hear it behind me. Following me. Waiting. Watching. I know it won't be long until it catches up with me. I need to get out of here.\""
     east = f1
     west = f6
     north = f21
@@ -79,7 +80,94 @@ f5: OutdoorRoom 'Fork 5'
 ;
 
 f6: OutdoorRoom 'Fork 6'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
     east = f5
+    west = d5
+    south = f7
+;
+
+f7: OutdoorRoom 'Fork 7'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    south = d6
+    north = f6
+    west = f8
+;
+
+f8: OutdoorRoom 'Fork 8'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    east = f7
+    north = f12
+    south = f9
+;
+
+f9: OutdoorRoom 'Fork 9'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    north = f8
+    west = d8
+    east = f10
+;
+
+f10: OutdoorRoom 'Fork 10'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    west = f9
+    north = f3
+    south = f3
+;
+
+f11: OutdoorRoom 'Fork 11'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    north = f10
+    east = f12
+    west = f13
+;
+
+f12: OutdoorRoom 'Fork 12'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    west = f11
+    east = f15
+    south = f8
+;
+
+f13: OutdoorRoom 'Fork 13'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    east = f11
+    south = f14
+    north = d8
+;
+
+f14: OutdoorRoom 'Fork 14"'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    north = f13
+    west = d9
+    south = d10
+;
+
+f15: OutdoorRoom 'Fork 15'
+    "<IMG SRC='assets/images/2turn.png' WIDTH=384 HEIGHT=216>\n
+    You walk aimlessly now just wanting to get away."
+    west = f12
+    north = d11
+    south = f30
+;
+
+f30: OutdoorRoom 'Exit'
+    "<IMG SRC='assets/images/exit.png' WIDTH=384 HEIGHT=216>\n
+    The exit."
+    north = f15
+    roomAfterAction()
+    {
+        "You made it out!";
+        finishGameMsg(ftVictory, [finishOptionUndo]);
+    }
 ;
 
 f21: OutdoorRoom 'Fork 21'
@@ -104,4 +192,32 @@ d3: DeadEnd 'Deadend'
 
 d4: DeadEnd 'Deadend'
     east = f4
+;
+
+d5: DeadEnd 'Deadend'
+    east = f6
+;
+
+d6: DeadEnd 'Deadend'
+    north = f7
+;
+
+d7: DeadEnd 'DeadEnd'
+    south= f8
+;
+
+d8: DeadEnd 'Deadend'
+    south= f13
+;
+
+d9: DeadEnd 'Deadend'
+    east= f14
+;
+
+d10: DeadEnd 'Deadend'
+    north= f14
+;
+
+d11: DeadEnd 'Deadend'
+    south= f15
 ;

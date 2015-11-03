@@ -8,7 +8,7 @@ watch win:pos:R:312,742,596,853
 watch win:vis:I:0
 SearchToolbar:rebarNewLine:I:0
 log win vis::I:0
-log win pos::R:500,275,1896,803
+log win pos::R:643,226,2039,754
 MenuBar:rebarVis:I:1
 DocToolbar:rebarIndex:I:3
 DocToolbar:rebarWidth:I:-1
@@ -24,15 +24,15 @@ build:installer options:S:1:savext=Creepy_Sprinkles_dbg
 search:start at top:I:0
 EditToolbar:rebarNewLine:I:1
 src win selrange:Creepy_Sprinkles.t:S:0:0,0
-src win selrange:Creepy_Sprinkles.t:S:1:2711,2711
-src win pos:Creepy_Sprinkles.t:R:0,0,1364,393
+src win selrange:Creepy_Sprinkles.t:S:1:5451,5451
+src win pos:Creepy_Sprinkles.t:R:-8,-1,1356,392
 proj search:exact case:I:0
 DocToolbar:rebarVis:I:1
 auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
 auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
 SearchToolbar:rebarIndex:I:2
 search:wrap:I:1
-auto-script:next-id:I:13
+auto-script:next-id:I:15
 SearchToolbar:rebarWidth:I:281
 src win edit mode:Creepy_Sprinkles.t:S:0:TADS 3
 search:text:S:0:
@@ -44,20 +44,20 @@ docking config::S:3:CB
 docking config::S:4:W3,270,170,304,711,604,861,D,B,watch win
 docking config::S:5:W3,270,170,2,711,302,861,D,B,locals win
 docking config::S:6:W-1,170,170,-106,94,1306,671,M,R,stack win
-docking config::S:7:W-1,170,170,143,21,1555,588,M,R,log win
+docking config::S:7:W-1,170,170,256,-17,1668,550,M,R,log win
 locals win:pos:R:10,742,294,853
 locals win:vis:I:0
 main win max::I:0
 proj search:collapse spaces:I:0
 search:exact case:I:0
 mdi win list::S:0:Creepy_Sprinkles.t
-main win pos::R:169,111,1726,819
+main win pos::R:199,100,1756,808
 build:srczipfile:S:0:Creepy_Sprinkles_dbgSource.zip
 proj search:whole word:I:0
 help win vis::I:0
 docsearch win vis::I:0
 build:exe:S:0:Creepy_Sprinkles_dbg.exe
-script win:pos:R:179,709,340,786
+script win:pos:R:209,645,370,775
 script win:vis:I:1
 EditToolbar:rebarIndex:I:1
 hist win vis::I:0
@@ -83,9 +83,9 @@ mdi win title::S:0:Creepy_Sprinkles.t
 search:dir:I:1
 MenuBar:rebarWidth:I:-1
 build:installer prog:S:0:Creepy_Sprinkles_dbg_Setup.exe
-project win:pos:R:179,240,340,683
+project win:pos:R:209,229,370,619
 project win:vis:I:1
-stack win pos::R:251,348,1647,886
+stack win pos::R:281,337,1677,875
 filesearch win vis::I:0
 stack win vis::I:0
 DebugToolbar:rebarIndex:I:4
