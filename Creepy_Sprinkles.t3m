@@ -9,6 +9,7 @@
 # settings might be modified.
 
 -o Creepy_Sprinkles.t3
+-pre
 -D LANGUAGE=en_us
 -D MESSAGESTYLE=neu
 -Fy obj
@@ -18,3 +19,6 @@
 -lib system
 -lib adv3/adv3
 -source Creepy_Sprinkles
+
+-res
+assets

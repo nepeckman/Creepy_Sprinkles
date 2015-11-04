@@ -2,64 +2,81 @@
 # TADS Workbench configuration settings
 
 DebugToolbar:rebarWidth:I:-1
+build:installer in webpage:I:0
 build:ext resfile cnt:I:0
 build:defaults set:I:1
-watch win:pos:R:312,742,596,853
 watch win:vis:I:0
+watch win:pos:R:312,742,596,853
+build:c ops:I:0
 SearchToolbar:rebarNewLine:I:0
-log win vis::I:1
-log win pos::R:643,226,2039,754
 MenuBar:rebarVis:I:1
+log win pos::R:319,317,1715,853
+log win vis::I:0
+build:charmap:S:0:
 DocToolbar:rebarIndex:I:3
+auto-script:prune to count:I:25
 DocToolbar:rebarWidth:I:-1
-src win split:Creepy_Sprinkles.t:S:0:0.000000
 DebugToolbar:rebarVis:I:1
+src win split:Creepy_Sprinkles.t:S:0:0.000000
+line wrap:%tads%lib\system.tl:S:0:N
 build:zipfile:S:0:Creepy_Sprinkles_dbg.zip
 watch win:sep xpos 0:I:142
 watch win:sep xpos 1:I:142
 watch win:sep xpos 2:I:142
-watch win:sep xpos 3:I:142
 build:installer options:S:0:name=Creepy_Sprinkles_dbg
 build:installer options:S:1:savext=Creepy_Sprinkles_dbg
+watch win:sep xpos 3:I:142
 search:start at top:I:0
+src win split:%tads%lib\adv3\adv3.tl:S:0:0.000000
 EditToolbar:rebarNewLine:I:1
 src win selrange:Creepy_Sprinkles.t:S:0:0,0
-src win selrange:Creepy_Sprinkles.t:S:1:5459,5459
-src win pos:Creepy_Sprinkles.t:R:-8,-1,1356,392
+src win selrange:Creepy_Sprinkles.t:S:1:80,80
+src win pos:Creepy_Sprinkles.t:R:36,15,1400,446
 proj search:exact case:I:0
 DocToolbar:rebarVis:I:1
+build:installer in all pk:I:1
 auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
 auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
 SearchToolbar:rebarIndex:I:2
 search:wrap:I:1
-auto-script:next-id:I:15
+src win selrange:%tads%lib\adv3\adv3.tl:S:0:0,0
+src win selrange:%tads%lib\adv3\adv3.tl:S:1:0,0
+src win pos:%tads%lib\adv3\adv3.tl:R:130,130,1315,494
+auto-script:next-id:I:20
 SearchToolbar:rebarWidth:I:281
+build:webpage in all pk:I:1
 src win edit mode:Creepy_Sprinkles.t:S:0:TADS 3
-search:text:S:0:
-search:text:S:1:
 docking config::S:0:CL
 docking config::S:1:W0,170,270,2,711,302,861,D,L,project win
 docking config::S:2:W0,170,150,175,711,345,861,D,L,script win
 docking config::S:3:CB
 docking config::S:4:W3,270,170,304,711,604,861,D,B,watch win
 docking config::S:5:W3,270,170,2,711,302,861,D,B,locals win
-docking config::S:6:W-1,170,170,-106,94,1306,671,M,R,stack win
-docking config::S:7:W-1,170,170,256,-17,1668,550,M,R,log win
-locals win:pos:R:10,742,294,853
+docking config::S:6:W-1,170,170,-166,66,1246,641,M,R,log win
+docking config::S:7:W-1,170,170,-378,131,1034,614,M,R,stack win
+search:text:S:0:You walk aimlessly now just wanting to get away."
+search:text:S:1:
 locals win:vis:I:0
+locals win:pos:R:10,742,294,853
 main win max::I:0
 proj search:collapse spaces:I:0
+auto-script:enabled:I:1
 search:exact case:I:0
-mdi win list::S:0::log
-mdi win list::S:1:Creepy_Sprinkles.t
-main win pos::R:199,100,1756,808
+build:src in webpage:I:0
+build:webpage dir:S:0:Web Build
+mdi win list::S:0:Creepy_Sprinkles.t
 build:srczipfile:S:0:Creepy_Sprinkles_dbgSource.zip
+main win pos::R:297,108,1854,816
+src win edit mode:%tads%lib\adv3\adv3.tl:S:0:TADS 3 Library
 proj search:whole word:I:0
 help win vis::I:0
+build:ignore case:I:0
+build:exe:S:0:Built Versions\Corn_Labyrinth.exe
 docsearch win vis::I:0
-build:exe:S:0:Creepy_Sprinkles_dbg.exe
-script win:pos:R:209,645,370,775
+build:zip in webpage:I:1
 script win:vis:I:1
+script win:pos:R:307,653,468,783
+build:use charmap:I:0
 EditToolbar:rebarIndex:I:1
 hist win vis::I:0
 EditToolbar:rebarWidth:I:1399
@@ -69,27 +86,43 @@ proj search:regex:I:0
 locals win:sep xpos 0:I:142
 locals win:sep xpos 1:I:142
 search:whole word:I:0
-line wrap:Creepy_Sprinkles.t:S:0:N
+build:debug_image_file:S:0:Creepy_Sprinkles_dbg.t3
 DebugToolbar:rebarNewLine:I:1
-build:debug_image_file:S:0:C:\Users\Nicolas\TADS\Creepy_Sprinkles\Creepy_Sprinkles_dbg.t3
+line wrap:Creepy_Sprinkles.t:S:0:N
+search dlg:old searches:S:0:You walk aimlessly now just wanting to get away."
+search dlg:old searches:S:1:You try to think of how you got here, but know nothing. You paus
+search dlg:old searches:S:2:The hollow rustling has become as steady as the beat of your he
+search dlg:old searches:S:3:
+src win split:%tads%lib\system.tl:S:0:0.000000
+find dialog:pos:R:738,413,1182,666
+search dlg:old search opts:S:0:
+search dlg:old search opts:S:1:
+search dlg:old search opts:S:2:
+search dlg:old search opts:S:3:
+line wrap:%tads%lib\adv3\adv3.tl:S:0:N
 search:regex:I:0
-mdi tab order::S:0:1,0
+mdi tab order::S:0:0
 build:rlsgam:S:0:Creepy_Sprinkles_dbg_rls.t3
 EditToolbar:rebarVis:I:1
 main win mdi max::I:0
 auto-script:default quit sequences set:I:1
+src win selrange:%tads%lib\system.tl:S:0:0,0
+src win selrange:%tads%lib\system.tl:S:1:0,0
+src win pos:%tads%lib\system.tl:R:104,104,1272,468
+auto-script:prune:I:1
 DocToolbar:rebarNewLine:I:0
 MenuBar:rebarIndex:I:0
-mdi win title::S:0:
-mdi win title::S:1:Creepy_Sprinkles.t
+mdi win title::S:0:Creepy_Sprinkles.t
 search:dir:I:1
-MenuBar:rebarWidth:I:-1
 build:installer prog:S:0:Creepy_Sprinkles_dbg_Setup.exe
-project win:pos:R:209,229,370,619
+MenuBar:rebarWidth:I:-1
 project win:vis:I:1
-stack win pos::R:281,337,1677,875
-filesearch win vis::I:0
+project win:pos:R:307,237,468,627
+src win edit mode:%tads%lib\system.tl:S:0:TADS 3 Library
+auto-script:dir:S:0:Scripts
 stack win vis::I:0
+filesearch win vis::I:0
+stack win pos::R:107,382,1503,826
 DebugToolbar:rebarIndex:I:4
 searchMode::I:1
 
